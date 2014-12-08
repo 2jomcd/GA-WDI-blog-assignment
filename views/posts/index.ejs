@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>All Posts by Joe McDonough</title>
+</head>
+<body>
+	<h1>These are all my posts:</h1>
+	<ul>
+		<% for (var i = 0; i < posts.length; i++) { %>
+			<li>
+				<a href="/blog/posts/<%= posts[i].id %>"> 
+					<%= posts[i].title %>
+					<br>
+					<br>
+				</a>
+			</li>
+		<% } %>
+	</ul>
+<br>
+<br>
+<br>
+	<a href="/blog">Joe's Blog Home</a>
+</body>
+</html>
